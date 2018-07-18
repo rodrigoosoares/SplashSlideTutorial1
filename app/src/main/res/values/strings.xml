@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SplashSlideTutorial1</string>
+    <!--Strings dos slides-->
+    <!--Headers-->
+    <string name="header_slide_tutorial_1">EAT</string>
+    <string name="header_slide_tutorial_2">CODE</string>
+    <string name="header_slide_tutorial_3">SLEEP</string>
+    <!--Content-->
+    <string name="content_slide_tutorial_1">Bacon ipsum dolor amet prosciutto pork meatball pig. Ham hock jerky pork loin turducken, salami meatball ball tip alcatra leberkas.</string>
+    <string name="content_slide_tutorial_2">Bacon ipsum dolor amet prosciutto pork meatball pig. Ham hock jerky pork loin turducken, salami meatball ball tip alcatra leberkas.</string>
+    <string name="content_slide_tutorial_3">Bacon ipsum dolor amet prosciutto pork meatball pig. Ham hock jerky pork loin turducken, salami meatball ball tip alcatra leberkas.</string>
+    <!--Buttons-->
+    <string name="skip">SKIP</string>
+    <string name="finish">FINISH</string>
+</resources>

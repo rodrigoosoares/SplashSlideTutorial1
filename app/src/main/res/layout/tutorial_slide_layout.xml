@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivTutorialImageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eat_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/tvTutorialHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ivTutorialImageIcon"
+        android:layout_marginTop="30dp"
+        android:text="Header"
+        android:textSize="30sp"
+        android:textColor="@color/colorTransparentWhite"/>
+    <TextView
+        android:id="@+id/tvTutorialContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTutorialHeader"
+        android:layout_marginTop="30dp"
+        android:text="Content"
+        android:textColor="@color/colorTransparentWhite"/>
+
+
+</RelativeLayout>
