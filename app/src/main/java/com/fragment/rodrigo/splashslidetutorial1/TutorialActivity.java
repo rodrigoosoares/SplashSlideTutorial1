@@ -1,5 +1,6 @@
 package com.fragment.rodrigo.splashslidetutorial1;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -78,10 +79,13 @@ public class TutorialActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnTutorialSkip:
-                    Toast.makeText(TutorialActivity.this, "SKIP", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(TutorialActivity.this, MainActivity.class));
+                    finish();
                     break;
                 case R.id.btnTutorialFinish:
-                    Toast.makeText(TutorialActivity.this, "FINISH", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(TutorialActivity.this, MainActivity.class));
+                    finish();
+                    break;
             }
         }
     };
