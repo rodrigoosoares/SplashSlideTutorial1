@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/drawerLayout">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include layout="@layout/layout_toolbar"/>
+        <include
+            layout="@layout/layout_toolbar" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -18,14 +20,6 @@
             android:layout_centerInParent="true"
             android:text="Main Page here!"
             android:textSize="30sp" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="20dp"
-            android:text="Botão provisório do tutorial"
-            android:onClick="tutorialOnClick"/>
     </RelativeLayout>
 
     <android.support.design.widget.NavigationView
@@ -34,5 +28,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/navigation_menu"/>
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/navigation_header"/>
+
 </android.support.v4.widget.DrawerLayout>

@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -31,22 +30,28 @@ public class MainActivity extends AppCompatActivity {
         nToggle = new ActionBarDrawerToggle(this, nDrawerLayout, R.string.open_navigation_drawer, R.string.close_navigation_drawer);
 
         nDrawerLayout.addDrawerListener(nToggle);
-
         nToggle.syncState();
+
         if(getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
+        navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch(item.getItemId()){
+                    case R.id.tutorial:
+                        startActivity(new Intent(MainActivity.this, TutorialActivity.class));
+                }
+                return false;
+            }
+        });
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(nToggle.onOptionsItemSelected(item))
             return true;
         return super.onOptionsItemSelected(item);
-    }
-    protected void tutorialOnClick(View view){
-        startActivity(new Intent(MainActivity.this, TutorialActivity.class));
-        MainActivity.this.finish();
     }
 }

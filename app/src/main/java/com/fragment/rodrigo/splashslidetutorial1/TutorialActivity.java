@@ -79,11 +79,9 @@ public class TutorialActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnTutorialSkip:
-                    startActivity(new Intent(TutorialActivity.this, MainActivity.class));
                     finish();
                     break;
                 case R.id.btnTutorialFinish:
-                    startActivity(new Intent(TutorialActivity.this, MainActivity.class));
                     finish();
                     break;
             }
